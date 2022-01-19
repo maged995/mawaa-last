@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/logo.png">
+    <title>الاداريين</title>
+    <!-- Font Cairo-->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Fonts  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--This page css - Morris CSS -->
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <div id="main-wrapper">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                      <!--Logo icon -->
+                        <b>
+                          <img src="../assets/images/logo.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->    
+                        <span>
+                          <p class="light-logo">Every Line</p>
+                        </span> 
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4>mohamed ahmed</h4>
+                                                <p class="text-muted">mohamed@gmail.com</p>
+                                              </div>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+              <!-- User profile -->
+              <div class="user-profile" style="background: url(../assets/images/user-info.jpg) no-repeat;">
+                <!-- User profile image -->
+                <div class="profile-img"> <img src="../assets/images/users/profile.png" alt="user" /> </div>
+                <!-- User profile text-->
+                <div class="profile-text"> <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">mohamed ahmed</a>
+                    <div class="dropdown-menu animated flipInY"> <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a> 
+                        <div class="dropdown-divider"></div> <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a> </div>
+                </div>
+              </div>
+            <!-- End User profile text-->
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="mdi mdi-gauge"></i>
+                            <span class="hide-menu">
+                              تتبع السائيقين
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">السائيقين</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">تتبع منفرد لسائق</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-location-arrow"></i>
+                            <span class="hide-menu">
+                              خريطة المراقبة
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">السيارات الملاكي</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">الاتوبيسات</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">المعدات</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-users"></i>
+                            <span class="hide-menu">
+                              الاداريين
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="companySupperVisors.html">المديرين</a>
+                                </li>
+                                <li>
+                                  <a href="supervisorsActions.html">سجل الاجرائات</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-snowplow"></i>
+                            <span class="hide-menu">
+                              المعدات
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">المعدات</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سائيقين المعدات</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجلات الوقود</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجلات الاعطال</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span class="hide-menu">
+                              التعاقدات الخارجية
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">التعاقدات</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">الفواتير</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-bus-alt"></i>
+                            <span class="hide-menu">
+                              الاتوبيسات
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">السيارات</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">السائيقين</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجلات الوقود</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجلات الاعطال</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-car"></i>
+                            <span class="hide-menu">
+                              سيارات الملاكي
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">السيارات</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">السائيقين</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجلات الوقود</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجلات الاعطال</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-user-shield"></i>
+                            <span class="hide-menu">
+                              نقل العاملين
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">العاملين</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">اجازات العاملين</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">الخطوط</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">الرحلات</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجل الرحلات</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">اذن ركوب مختلف</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجل الركوب والنزول</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-gas-pump"></i>
+                            <span class="hide-menu">
+                              محطة الوقود
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">العاملين</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجل الخزان</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجل الاستخدام</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-hammer"></i>
+                            <span class="hide-menu">
+                              الورشة
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">العاملين</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">اضافة عملية جديدة</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">عمليات اليوم</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجل العمليات</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-question-circle"></i>
+                            <span class="hide-menu">
+                              الدعم الفني
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">فتح تذكرة</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">التذاكر المفتوحة</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">التذاكر المغلقة</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-bell"></i>
+                            <span class="hide-menu">
+                              الاشعارات
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">إرسال الاشعارات</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجل الاشعارات</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> 
+                          <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                            <i class="fas fa-shield-alt"></i>
+                            <span class="hide-menu">
+                              مكتب الامن
+                            </span>
+                          </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                  <a href="drivers.html">العاملين</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">حركة اليوم</a>
+                                </li>
+                                <li>
+                                  <a href="Single-Driver-Tracking.html">سجل الحركة</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+            <!-- Bottom points-->
+            <div class="sidebar-footer">
+                <!-- item-->
+                <a href="" class="link" data-toggle="tooltip" title="Logout">
+                  <i class="mdi mdi-power"></i>
+                </a> 
+              </div>
+            <!-- End Bottom points-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor">Dashboard</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">لوحة التحكم</a></li>
+                            <li class="breadcrumb-item active">الاداريين</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                  <!-- Row -->
+
+                <div class="row">
+                  <div class="col-md-6 mr-b-1">
+                    <a href="supervisorsActions.html">
+                      <div class="text-center bk-hover">
+                      <i class="far fa-clipboard fa-3x mr-b-1"></i>
+                      <p>
+                        سجل الاوامر
+                      </p>
+                    </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 mr-b-1">
+                    <a href="companySupperVisors-add.html">
+                      <div class="text-center bk-hover">
+                      <i class="fas fa-user-plus fa-3x mr-b-1"></i>
+                      <p>
+                        اضافة اداري جديد
+                      </p>
+                    </div>
+                    </a>
+                  </div>
+
+                </div>
+                  <!-- Row -->
+
+                <!-- Start Row Supper Visors Form --> 
+
+                <div class="row max-height-vh-100">
+                  <div class="col-lg-12 driver-info">
+                    <div class="header border-top-1">
+                      <h5 class="c-red">
+                        اضافة وتعديل الاداريين
+                      </h5>
+                    </div>
+                    <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden mr-b-1">
+                      <div class="mb-3 row">
+                        <label for="static" class="col-sm-2 col-form-label text-left">رقم الدعم الفني</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="static" placeholder="رقم الدعم الفني">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="name" class="col-sm-2 col-form-label text-left">الاسم</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="name" placeholder="الاسم">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label text-left">البريد الالكتروني</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="staticEmail" value="email@example.com">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="mobaile" class="col-sm-2 col-form-label text-left">الموبايل</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="mobaile" placeholder="الموبايل">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="passowrd" class="col-sm-2 col-form-label text-left">كلمة المرور</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="passowrd" placeholder="كلمة المرور">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4 text-center">
+                          <label for="image">
+                            صورة المستخدم
+                          </label>
+                          <img src="../assets/images/img_4.jpg" alt="" style="max-width: 70%;">
+                        </div>
+
+                        <div class="col-sm-3 form-check form-switch">
+                          <label for="block-1" class="mr-l-1">
+                            تفعيل
+                          </label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="block-1">
+                        </div>
+
+                        <div class="col-sm-3 form-check form-switch">
+                          <label for="block" class="mr-l-1">
+                            حظر
+                          </label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="block">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-2 text-left">
+                          <label for="">
+                            اختيار الصلاحيات
+                          </label>
+                        </div>
+
+                        <div class="col-sm-10">
+                          <!-- أكتب الكود هنا  -->
+                        </div>
+                      </div>
+
+                      <div class="text-left">
+                        <button class="btn btn-danger">
+                          حفظ التحديث
+                        </button>
+
+                        <button class="btn btn-secondary">
+                          <a href="companySupperVisors.html">
+                            العودة
+                          </a>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- End Row Supper Visors Form --> 
+
+                <!-- Start Row Supper Visors  -->
+                <div class="row max-height-vh-100">
+                  <!-- Start Map -->
+                  <div class="col-lg-12 driver-info">
+                    <div class="header border-top-1">
+                      <h5 class="c-red">
+                        الاداريين
+                      </h5>
+                    </div>
+                    <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th class="text-right" scope="col">رقم الدعم الفنى</th>
+                            <th class="text-right" scope="col">الاسم</th>
+                            <th class="text-right" scope="col">البريد الالكتروني</th>
+                            <th class="text-right" scope="col">الموبايل</th>
+                            <th class="text-right" scope="col">أخر دخول</th>
+                            <th class="text-right" scope="col">الادوات</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">001030</td>
+                            <td>حسن</td>
+                            <td>max1@gmail.com</td>
+                            <td>01022663798</td>
+                            <td>2021-07-04 12:58:21</td>
+                            <td>
+                              <button class="btn btn-danger">
+                                <i class="fas fa-trash-alt"></i>
+                              </button>
+                              <button class="btn btn-success">
+                                <a href="companySupperVisors-edit.html">
+                                  <i class="fas fa-pencil-alt"></i>
+                                </a>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Row Supper Visors  -->
+
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2022 Every Line </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+</body>
+</html>
