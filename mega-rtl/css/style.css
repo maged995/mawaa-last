@@ -380,7 +380,8 @@ html body .vb {
 
   i ,
   a ,
-  p {
+  p ,
+  a p {
     color: #fff !important;
   }
 

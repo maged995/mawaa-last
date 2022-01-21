@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/logo.png">
-    <title>سيارات موقف</title>
+    <title>لوحة التحكم</title>
     <!-- Font Cairo-->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Fonts  -->
@@ -177,10 +177,10 @@
                           </a>
                             <ul aria-expanded="false" class="collapse">
                                 <li>
-                                  <a href="drivers.html">المعدات</a>
+                                  <a href="companyEquipments.html">المعدات</a>
                                 </li>
                                 <li>
-                                  <a href="Single-Driver-Tracking.html">سائيقين المعدات</a>
+                                  <a href="companyEquipmentDrivers.html">سائيقين المعدات</a>
                                 </li>
                                 <li>
                                   <a href="Single-Driver-Tracking.html">سجلات الوقود</a>
@@ -200,10 +200,10 @@
                           </a>
                             <ul aria-expanded="false" class="collapse">
                                 <li>
-                                  <a href="drivers.html">التعاقدات</a>
+                                  <a href="companyContractList.html">التعاقدات</a>
                                 </li>
                                 <li>
-                                  <a href="Single-Driver-Tracking.html">الفواتير</a>
+                                  <a href="companyInvoice.html">الفواتير</a>
                                 </li>
                             </ul>
                         </li>
@@ -217,10 +217,10 @@
                           </a>
                             <ul aria-expanded="false" class="collapse">
                                 <li>
-                                  <a href="drivers.html">السيارات</a>
+                                  <a href="companyCars.html">السيارات</a>
                                 </li>
                                 <li>
-                                  <a href="Single-Driver-Tracking.html">السائيقين</a>
+                                  <a href="companyDrivers.html">السائيقين</a>
                                 </li>
                                 <li>
                                   <a href="Single-Driver-Tracking.html">سجلات الوقود</a>
@@ -418,198 +418,136 @@
                     <div class="col-md-5 col-8 align-self-center">
                         <h3 class="text-themecolor">Dashboard</h3>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">لوحة التحكم</a></li>
-                            <li class="breadcrumb-item active">سيارات موقف</li>
+                            <li class="breadcrumb-item"><a href="dashboard.html">لوحة التحكم</a></li>
                         </ol>
                     </div>
                 </div>
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <!-- Row -->
-                <div class="container-fluid py-4">
-                  <!-- Start Row Search -->
-                  <div class="row">
-                    <div class="col-sm-12 driver-info">
-                      <div class="header border-top-1">
-                        <h5 class="c-red">
-                          بحث
-                        </h5>
+                <!-- Start Row DashBorad -->
+
+                <div class="row max-height-vh-100">
+                  <!-- Start Map -->
+                  <div class="col-lg-12 driver-info">
+                    <div class="header border-top-1">
+                      <h5 class="c-red">
+                        الوصول السريع
+                      </h5>
+                    </div>
+                    <div class=" pd-1 bk shadow-blur shadow-card overflow-hidden">
+                      <div class="row">
+                        <div class="col-md-3 mr-b-1">
+                          <a href="#">
+                            <div class="text-center bk-hover">
+                            <i class="fas fa-gas-pump fa-3x mr-b-1"></i>
+                            <p>
+                              محطة الوقود
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+
+                        <div class="col-md-3 mr-b-1">
+                          <a href="#">
+                            <div class="text-center bk-hover">
+                            <i class="fas fa-luggage-cart fa-3x mr-b-1"></i>
+                            <p>
+                              سجل الوقود
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+
+                        <div class="col-md-3 mr-b-1">
+                          <a href="#">
+                            <div class="text-center bk-hover">
+                            <i class="fas fa-ban fa-3x mr-b-1"></i>
+                            <p>
+                              المعدات المتوقفة
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+
+                        <div class="col-md-3 mr-b-1">
+                          <a href="#">
+                            <div class="text-center bk-hover">
+                            <i class="far fa-clipboard fa-3x mr-b-1"></i>
+                            <p>
+                              أعطال اليوم
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+
+
                       </div>
-                      <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden mr-b-1">
-  
-                        <div class="mb-3 row">
-                          <label for="name" class="col-sm-2 col-form-label text-left">الاسم</label>
-                          <div class="col-sm-10">
-                            <input type="text" class="form-control" id="name" placeholder="الاسم">
+
+                      <div class="row">
+                        <div class="col-md-3 mr-b-1">
+                          <a href="#">
+                            <div class="text-center bk-hover">
+                            <i class="fas fa-route fa-3x mr-b-1"></i>
+                            <p>
+                              الرحلات الحالية
+                            </p>
                           </div>
+                          </a>
                         </div>
 
-                        <div class="mb-3 row">
-                          <label for="mobaile" class="col-sm-2 col-form-label text-left">الموبايل</label>
-                          <div class="col-sm-10">
-                            <input type="text" class="form-control" id="mobaile" placeholder="الموبايل">
+                        <div class="col-md-3 mr-b-1">
+                          <a href="#">
+                            <div class="text-center bk-hover">
+                            <i class="fas fa-wrench fa-3x mr-b-1"></i>
+                            <p>
+                              الورشة
+                            </p>
                           </div>
+                          </a>
                         </div>
 
-                        <div class="text-left">
-                          <button class="button btn btn-danger">
-                            عرض النتائج
-                          </button>
+                        <div class="col-md-3 mr-b-1">
+                          <a href="#">
+                            <div class="text-center bk-hover">
+                            <i class="fas fa-list-alt fa-3x mr-b-1"></i>
+                            <p>
+                              سجل حركة الزوار
+                            </p>
+                          </div>
+                          </a>
+                        </div>
+
+                        <div class="col-md-3 mr-b-1">
+                          <a href="#">
+                            <div class="text-center bk-hover">
+                            <i class="fas fa-bus-alt fa-3x mr-b-1"></i>
+                            <p>
+                              اذن ركوب عامل
+                            </p>
+                          </div>
+                          </a>
                         </div>
 
                       </div>
                     </div>
                   </div>
-                  <!-- End Row Search -->
+              </div>
+                <!-- End Row DashBorad -->
 
-                  <div class="row max-height-vh-100">
-                    <!-- Start Map -->
-                    <div class="col-lg-8 driver-info">
-                      <div class="header border-top-1">
-                        <h5 class="c-red">
-                          سيارات موقف
-                        </h5>
-                      </div>
-                      <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden">
-                        <img src="../assets/images/map.jpg" alt="map" style="max-width: 100%;">
-                      </div>
+                <div class="row mr-t-1 max-height-vh-100">
+                  <!-- Start Map -->
+                  <div class="col-lg-12 driver-info">
+                    <div class="header border-top-1">
+                      <h5 class="c-red">
+                        الخريطة العامة
+                      </h5>
                     </div>
-                  <!-- End Map -->
-              
-                  <!-- Start result for Search  -->
-                    <div class="col-lg-4 driver-info">
-                      <div class="header">
-                        <h5 class="c-red">
-                          نتائج البحث
-                        </h5>
-                      </div>
-                      <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden ">
-                        <div class="result">
-                          <p>
-                            <span>
-                              السائق (310) :
-                            </span>
-                            محمد محمد أحمد عبدالحميد
-                          </p>
-
-                          <p>
-                            <span>
-                              أخر تواجد :
-                            </span>
-                            منذ 4 شهور
-                          </p>
-
-                        </div>
-
-                        <div class="result">
-                          <p>
-                            <span>
-                              السائق (310) :
-                            </span>
-                            محمد محمد أحمد عبدالحميد
-                          </p>
-
-                          <p>
-                            <span>
-                              أخر تواجد :
-                            </span>
-                            منذ 4 شهور
-                          </p>
-
-                        </div>
-
-                        <div class="result">
-                          <p>
-                            <span>
-                              السائق (310) :
-                            </span>
-                            محمد محمد أحمد عبدالحميد
-                          </p>
-
-                          <p>
-                            <span>
-                              أخر تواجد :
-                            </span>
-                            منذ 4 شهور
-                          </p>
-
-                        </div>
-
-                        <div class="result">
-                          <p>
-                            <span>
-                              السائق (310) :
-                            </span>
-                            محمد محمد أحمد عبدالحميد
-                          </p>
-
-                          <p>
-                            <span>
-                              أخر تواجد :
-                            </span>
-                            منذ 4 شهور
-                          </p>
-
-                        </div>
-
-                        <div class="result">
-                          <p>
-                            <span>
-                              السائق (310) :
-                            </span>
-                            محمد محمد أحمد عبدالحميد
-                          </p>
-
-                          <p>
-                            <span>
-                              أخر تواجد :
-                            </span>
-                            منذ 4 شهور
-                          </p>
-
-                        </div>
-
-                        <div class="result">
-                          <p>
-                            <span>
-                              السائق (310) :
-                            </span>
-                            محمد محمد أحمد عبدالحميد
-                          </p>
-
-                          <p>
-                            <span>
-                              أخر تواجد :
-                            </span>
-                            منذ 4 شهور
-                          </p>
-
-                        </div>
-
-                        <div class="result">
-                          <p>
-                            <span>
-                              السائق (310) :
-                            </span>
-                            محمد محمد أحمد عبدالحميد
-                          </p>
-
-                          <p>
-                            <span>
-                              أخر تواجد :
-                            </span>
-                            منذ 4 شهور
-                          </p>
-
-                        </div>
-                        
-                      </div>              
+                    <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden">
+                      <img src="../assets/images/map.jpg" alt="map" style="max-width: 100%;">
                     </div>
-                    <!-- End result for Search  -->
                   </div>
-                </div>
-                <!-- Row -->
+                <!-- End Map -->
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
