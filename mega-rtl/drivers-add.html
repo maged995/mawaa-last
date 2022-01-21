@@ -164,7 +164,7 @@
                         </ol>
                         <div class="text-left">
                           <button class="btn btn-danger">
-                            <a href="drivers-add.html">
+                            <a href="companyCars-add.html">
                               اضافة جديد
                               <i class="fas fa-plus-circle"></i>
                             </a>
@@ -175,57 +175,65 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <!-- Row -->
-                <div class="container-fluid py-4">
+                <!-- Start Row Company Cars Form --> 
 
-                  <div class="row max-height-vh-100">
-                    <!-- Start Map -->
-                    <div class="col-lg-12 driver-info">
-                      <div class="header border-top-1">
-                        <h5 class="c-red">
-                          جدول السـائقين
-                        </h5>
-                      </div>
-                      <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="text-right" scope="col">#</th>
-                              <th class="text-right" scope="col">اسم السائق</th>
-                              <th class="text-right" scope="col">رقم الموبايل</th>
-                              <th class="text-right" scope="col">السيارة</th>
-                              <th class="text-right" scope="col">أخر تواجد</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="row">1</td>
-                              <td>محمد عادل</td>
-                              <td>01096766808</td>
-                              <td>45612</td>
-                              <td>منذ 3 اسابيع</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">2</td>
-                              <td>محمد محمد</td>
-                              <td>01119060707</td>
-                              <td>68745</td>
-                              <td>منذ اسبوعين</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">3</td>
-                              <td>خالد محمد</td>
-                              <td>01066595985</td>
-                              <td>45612</td>
-                              <td>منذ 3 ايام</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                <div class="row max-height-vh-100">
+                  <div class="col-lg-12 driver-info">
+                    <div class="header border-top-1">
+                      <h5 class="c-red">
+                        اضافة سائق جديد
+                      </h5>
                     </div>
+                    <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden mr-b-1">
+
+                      <div class="mb-3 row">
+                        <label for="static" class="col-sm-2 col-form-label text-left">اسم السائق</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="static" placeholder="اسم السائق">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label text-left">نوع السبارة</label>
+                        <div class="col-sm-10">
+                          <select class="form-control" style="height: 3rem;" aria-label="Default select example">
+                            <option selected>نوع السبارة</option>
+                            <option value="1">سقف عالي</option>
+                            <option value="2">14 صيني</option>
+                            <option value="3">H1-H1</option>
+                            <option value="1">انوبيس 32</option>
+                            <option value="2">اتوبيس 52</option>
+                            <option value="3">ملاكي</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="name" class="col-sm-2 col-form-label text-left">اللون</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="name" placeholder="اللون">
+                        </div>
+                      </div>
+
+                      <div class="text-left">
+
+                        <button class="btn btn-danger">
+                          حفظ جديد
+                        </button>
+
+                        <button class="btn btn-secondary">
+                          <a href="drivers.html">
+                            العودة
+                          </a>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
-              </div>
-                <!-- Row -->
+                <!-- End Row Company Cars Form --> 
+
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->

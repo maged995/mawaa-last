@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/logo.png">
-    <title>أدارة الفواتير</title>
+    <title>السيارات</title>
     <!-- Font Cairo-->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Fonts  -->
@@ -217,10 +217,10 @@
                           </a>
                             <ul aria-expanded="false" class="collapse">
                                 <li>
-                                  <a href="drivers.html">السيارات</a>
+                                  <a href="companyCars.html">السيارات</a>
                                 </li>
                                 <li>
-                                  <a href="Single-Driver-Tracking.html">السائيقين</a>
+                                  <a href="companyDrivers.html">السائيقين</a>
                                 </li>
                                 <li>
                                   <a href="Single-Driver-Tracking.html">سجلات الوقود</a>
@@ -419,11 +419,11 @@
                         <h3 class="text-themecolor">Dashboard</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">لوحة التحكم</a></li>
-                            <li class="breadcrumb-item active">أدارة الفواتير</li>
+                            <li class="breadcrumb-item active">السيارات</li>
                         </ol>
                         <div class="text-left">
                           <button class="btn btn-danger">
-                            <a href="companyInvoice-add.html">
+                            <a href="companyCars-add.html">
                               اضافة جديد
                               <i class="fas fa-plus-circle"></i>
                             </a>
@@ -434,132 +434,49 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                  <!-- Start Row Equipments Form --> 
-                <div class="row max-height-vh-100">
-                  <div class="col-lg-12 driver-info">
-                    <div class="header border-top-1">
-                      <h5 class="c-red">
-                        اضافة وتعديل أدارة الفواتير
-                      </h5>
-                    </div>
-                    <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden mr-b-1">
-                      <div class="mb-3 row">
-                        <label for="static" class="col-sm-2 col-form-label text-left">من تاريخ</label>
-                        <div class="col-sm-10">
-                          <input type="date" class="form-control" id="static" placeholder="من تاريخ">
-                        </div>
-                      </div>
-
-                      <div class="mb-3 row">
-                        <label for="static" class="col-sm-2 col-form-label text-left">الى تاريخ</label>
-                        <div class="col-sm-10">
-                          <input type="date" class="form-control" id="static" placeholder="الى تاريخ">
-                        </div>
-                      </div>
-
-                      <div class="mb-3 row">
-                        <label for="static" class="col-sm-2 col-form-label text-left">تاريخ الاستحقاق</label>
-                        <div class="col-sm-10">
-                          <input type="date" class="form-control" id="static" placeholder="تاريخ الاستحقاق">
-                        </div>
-                      </div>
-
-                      <div class="mb-3 row">
-                        <label for="mobaile" class="col-sm-2 col-form-label text-left">الاجمالى</label>
-                        <div class="col-sm-10">
-                          <input type="number" class="form-control" id="mobaile" placeholder="الاجمالى">
-                        </div>
-                      </div>
-
-                      <div class="mb-3 row">
-                        <label for="passowrd" class="col-sm-2 col-form-label text-left">الخصم</label>
-                        <div class="col-sm-10">
-                          <input type="number" class="form-control" id="passowrd" placeholder="الخصم">
-                        </div>
-                      </div>
-
-                      <div class="mb-3 row">
-                        <label for="passowrd" class="col-sm-2 col-form-label text-left">الاجمالى النهائي</label>
-                        <div class="col-sm-10">
-                          <input type="number" class="form-control" id="passowrd" placeholder="الاجمالى النهائي">
-                        </div>
-                      </div>
-
-                      <div class="mb-3 row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label text-left">حالة الدفع</label>
-                        <div class="col-sm-10">
-                          <select class="form-control" style="height: 3rem;" aria-label="Default select example">
-                            <option selected>قيد الانتظار</option>
-                            <option value="1">مدفوع</option>
-                            <option value="2">غير مدفوع</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <div class="mb-3 row mr-b-1">
-                        <label for="passowrd" class="col-sm-2 col-form-label text-left">تعليق</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="passowrd" placeholder="تعليق">
-                        </div>
-                      </div>
-
-                      <div class="text-left">
-                        <button class="btn btn-danger">
-                          حفظ التحديث
-                        </button>
-
-                        <button class="btn btn-secondary">
-                          <a href="companyInvoice.html">
-                            العودة
-                          </a>
-                        </button>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Row Equipments Form --> 
                 <!-- Row -->
                 <div class="row max-height-vh-100">
                   <div class="col-lg-12 driver-info">
                     <div class="header border-top-1">
                       <h5 class="c-red">
-                        أدارة الفواتير
+                        السيارات
                       </h5>
                     </div>
                     <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden">
                       <table class="table">
                         <thead>
                           <tr>
-                            <th class="text-right" scope="col">رقم الفاتورة</th>
-                            <th class="text-right" scope="col">تاريخ الانشاء</th>
-                            <th class="text-right" scope="col">مكتب</th>
-                            <th class="text-right" scope="col">الاجمالى</th>
-                            <th class="text-right" scope="col">الاجمالى النهائي</th>
-                            <th class="text-right" scope="col">الخصم</th>
-                            <th class="text-right" scope="col">تعليق</th>
-                            <th class="text-right" scope="col">تاريخ الاستحقاق</th>
-                            <th class="text-right" scope="col">حالة الدفع</th>
+                            <th class="text-right" scope="col">صورة السيارة</th>
+                            <th class="text-right" scope="col">الموديل</th>
+                            <th class="text-right" scope="col">اللون</th>
+                            <th class="text-right" scope="col">عدد المقاعد</th>
+                            <th class="text-right" scope="col">رقم اللوحة</th>
+                            <th class="text-right" scope="col">نوع الرخصة</th>
+                            <th class="text-right" scope="col">انتهاء الرخصة</th>
+                            <th class="text-right" scope="col">السائق</th>
+                            <th class="text-right" scope="col">حالة التفعيل</th>
                             <th class="text-right" scope="col">الادوات</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td scope="row">3089734</td>
-                            <td>2021-03-10 23:50:55</td>
-                            <td>mohamed</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                            <td>0</td>
-                            <td>فاتورة شهر مارس</td>
-                            <td>2021-04-01</td>
-                            <td>قيد الانتظار</td>
+                            <td scope="row" style="max-width: 6rem;">
+                              <img style="max-width: 100%;" src="../assets/images/car.jpg" alt="">
+                            </td>
+                            <td>20000</td>
+                            <td>اسود</td>
+                            <td>4</td>
+                            <td>8253 س ص ن</td>
+                            <td>ملاكي</td>
+                            <td>2021-09-28</td>
+                            <td>310</td>
+                            <td>غير مفعل</td>
                             <td>
                               <button class="btn btn-danger">
                                 <i class="fas fa-trash-alt"></i>
                               </button>
                               <button class="btn btn-success">
-                                <a href="companyInvoice-edit.html">
+                                <a href="companyCars-edit.html">
                                   <i class="fas fa-pencil-alt"></i>
                                 </a>
                               </button>

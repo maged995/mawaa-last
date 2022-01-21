@@ -2346,3 +2346,24 @@ When click on sidebar toggler and also for tablet
   padding: 10px;
   margin-bottom: 1em;
 }
+
+.card-body {
+  min-width: 320px;
+  width: 30%;
+  margin: auto;
+  margin-top: 18%;
+}
+
+.card-body form button {
+  background-color: var(--second-color);
+}
+
+.card-body form .img-login {
+  margin: auto;
+}
+
+.card-body img {
+  max-width: 115px;
+  display: block;
+  margin: auto;
+}
