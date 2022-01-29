@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/logo.png">
-    <title>سائقين السيارات</title>
+    <title>خطوط الشركات</title>
     <!-- Font Cairo-->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Fonts  -->
@@ -419,11 +419,11 @@
                         <h3 class="text-themecolor">Dashboard</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">لوحة التحكم</a></li>
-                            <li class="breadcrumb-item active">سائقين السيارات</li>
+                            <li class="breadcrumb-item active">خطوط الشركات</li>
                         </ol>
                         <div class="text-left">
                           <button class="btn btn-danger">
-                            <a href="companyPvDrivers-add.html">
+                            <a href="companyLiens-add.html">
                               اضافة جديد
                               <i class="fas fa-plus-circle"></i>
                             </a>
@@ -434,49 +434,188 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
+                <!-- Start Row Company Cars Form --> 
+
+                <div class="row max-height-vh-100">
+                  <div class="col-lg-12 driver-info">
+                    <div class="header border-top-1">
+                      <h5 class="c-red">
+                        اضافة وتعديل خطوط الشركات
+                      </h5>
+                    </div>
+                    <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden mr-b-1">
+
+                      <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label text-left">مشرف الحركة</label>
+                        <div class="col-sm-10">
+                          <select class="form-control" style="height: 3rem;" aria-label="Default select example">
+                            <option selected>مشرف الحركة</option>
+                            <option value="1">محمد محمد علي</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="static" class="col-sm-2 col-form-label text-left">اسم الخط</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="static" placeholder="اسم الخط">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="name" class="col-sm-2 col-form-label text-left">الوصف</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="name" placeholder="الوصف">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label text-left">عدد العاملين</label>
+                        <div class="col-sm-10">
+                          <input type="number" class="form-control" id="staticEmail" placeholder="عدد العاملين">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="mobaile" class="col-sm-2 col-form-label text-left">وقت الأنتظار</label>
+                        <div class="col-sm-10">
+                          <input type="number" class="form-control" id="mobaile" placeholder="وقت الأنتظار">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="text" class="col-sm-2 col-form-label text-left">وقت الانطلاق</label>
+                        <div class="col-sm-10">
+                          <input type="time" class="form-control" id="text" placeholder="وقت الانطلاق">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="text" class="col-sm-2 col-form-label text-left">وقت الوصول</label>
+                        <div class="col-sm-10">
+                          <input type="time" class="form-control" id="text" placeholder="وقت الوصول">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="text" class="col-sm-2 col-form-label text-left">وقت انطلاق العودة</label>
+                        <div class="col-sm-10">
+                          <input type="time" class="form-control" id="text" placeholder="وقت انطلاق العودة">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="text" class="col-sm-2 col-form-label text-left">وقت العودة</label>
+                        <div class="col-sm-10">
+                          <input type="time" class="form-control" id="text" placeholder="وقت العودة">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="text" class="col-sm-2 col-form-label text-left">نقطة الانطلاق</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="text" placeholder="نقطة الانطلاق">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="text" class="col-sm-2 col-form-label text-left"></label>
+                        <div class="col-sm-10">
+                          <img src="../assets/images/map.jpg" alt="map" style="max-width: 100%;">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="text" class="col-sm-2 col-form-label text-left">نقطة الوصول</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="text" placeholder="نقطة الوصول">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="text" class="col-sm-2 col-form-label text-left"></label>
+                        <div class="col-sm-10">
+                          <img src="../assets/images/map.jpg" alt="map" style="max-width: 100%;">
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-sm-3 form-check form-switch">
+                          <label for="block-3" class="mr-l-1">
+                            الحالة
+                          </label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="block-3">
+                        </div>
+
+                        <div class="col-sm-3 form-check form-switch">
+                          <label for="block-4" class="mr-l-1">
+                            حذف الخط
+                          </label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="block-4">
+                        </div>
+
+                      </div>
+
+                      <div class="text-left">
+
+                        <button class="btn btn-danger">
+                          حفظ التحديث
+                        </button>
+
+                        <button class="btn btn-secondary">
+                          <a href="companyLiens.html">
+                            العودة
+                          </a>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- End Row Company Cars Form --> 
+
+
                 <!-- Row -->
                 <div class="row max-height-vh-100">
                   <div class="col-lg-12 driver-info">
                     <div class="header border-top-1">
                       <h5 class="c-red">
-                        سائقين السيارات
+                        خطوط الشركات
                       </h5>
                     </div>
                     <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden">
                       <table class="table">
                         <thead>
                           <tr>
-                            <th class="text-right" scope="col">رقم الدعم الفنى</th>
-                            <th class="text-right" scope="col">الصورة</th>
-                            <th class="text-right" scope="col">	الاسم</th>
-                            <th class="text-right" scope="col">الموبايل</th>
-                            <th class="text-right" scope="col">تاريخ الانتهاء</th>
-                            <th class="text-right" scope="col">نوع التغطية</th>
-                            <th class="text-right" scope="col">مستوى البطارية</th>
-                            <th class="text-right" scope="col">أخر تواجد</th>
-                            <th class="text-right" scope="col">	الحالة</th>
+                            <th class="text-right" scope="col">اسم الخط</th>
+                            <th class="text-right" scope="col">مشرف الحركة</th>
+                            <th class="text-right" scope="col">عدد العاملين</th>
+                            <th class="text-right" scope="col">وقت الانطلاق</th>
+                            <th class="text-right" scope="col">وقت الوصول</th>
+                            <th class="text-right" scope="col">وقت انطلاق العودة</th>
+                            <th class="text-right" scope="col">وقت العودة</th>
+                            <th class="text-right" scope="col">الحالة</th>
                             <th class="text-right" scope="col">الادوات</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>800452</td>
-                            <td scope="row" style="max-width: 6rem;">
-                              <img style="max-width: 100%;" src="../assets/images/car.jpg" alt="">
-                            </td>
-                            <td>محمد محمد احمد عبدالحميد</td>
-                            <td>01277027786</td>
-                            <td>2022-06-19</td>
-                            <td>4.0</td>
-                            <td>23.0</td>
-                            <td>2021-09-01 16:33:31</td>
-                            <td>مفعل</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                               <button class="btn btn-danger">
                                 <i class="fas fa-trash-alt"></i>
                               </button>
                               <button class="btn btn-success">
-                                <a href="companyPvDrivers-edit.html">
+                                <a href="companyLiens-edit.html">
                                   <i class="fas fa-pencil-alt"></i>
                                 </a>
                               </button>

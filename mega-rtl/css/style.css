@@ -437,6 +437,53 @@ font-size: 14px;}
   overflow-x: auto;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
 
+
+  textarea#mentions {
+    height: 350px;
+  }
+  
+  div.card,
+  .tox div.card {
+    width: 240px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(34, 47, 62, .1);
+    padding: 8px;
+    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  }
+  
+  div.card::after,
+  .tox div.card::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  div.card h1,
+  .tox div.card h1 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 8px;
+    padding: 0;
+    line-height: normal;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  }
+  
+  div.card p,
+  .tox div.card p {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  }
+  
+  div.card img.avatar,
+  .tox div.card img.avatar {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    float: left;
+  }
+
 /*******************
 Wave Effects
 *******************/
@@ -1499,6 +1546,11 @@ When click on sidebar toggler and also for tablet
       border-color: var(--hover-color); } }
 
 @media (max-width: 767px) {
+  table {
+    overflow-y: auto !important;
+    height:100% !important;
+    display:block !important;
+  }
   .mini-sidebar .left-sidebar {
     position: fixed; }
   .mini-sidebar .left-sidebar, .mini-sidebar .sidebar-footer {
@@ -2373,3 +2425,4 @@ When click on sidebar toggler and also for tablet
   display: block;
   margin: auto;
 }
+

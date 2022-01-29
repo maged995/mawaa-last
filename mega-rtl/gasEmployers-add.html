@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/logo.png">
-    <title>سائقين السيارات</title>
+    <title>العاملين بمحطة الوقود</title>
     <!-- Font Cairo-->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Fonts  -->
@@ -419,11 +419,11 @@
                         <h3 class="text-themecolor">Dashboard</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">لوحة التحكم</a></li>
-                            <li class="breadcrumb-item active">سائقين السيارات</li>
+                            <li class="breadcrumb-item active">العاملين بمحطة الوقود</li>
                         </ol>
                         <div class="text-left">
                           <button class="btn btn-danger">
-                            <a href="companyPvDrivers-add.html">
+                            <a href="gasEmployers-add.html">
                               اضافة جديد
                               <i class="fas fa-plus-circle"></i>
                             </a>
@@ -434,49 +434,109 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
+                <!-- Start Row Company Cars Form --> 
+
+                <div class="row max-height-vh-100">
+                  <div class="col-lg-12 driver-info">
+                    <div class="header border-top-1">
+                      <h5 class="c-red">
+                        اضافة وتعديل العاملين بمحطة الوقود
+                      </h5>
+                    </div>
+                    <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden mr-b-1">
+
+                      <div class="mb-3 row">
+                        <label for="static" class="col-sm-2 col-form-label text-left">الاسم</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="static" placeholder="الاسم">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="name" class="col-sm-2 col-form-label text-left">الموبايل</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="name" placeholder="الموبايل">
+                        </div>
+                      </div>
+
+                      <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label text-left">كلمة المرور</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="staticEmail" placeholder="كلمة المرور">
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-sm-3 form-check form-switch">
+                          <label for="block-3" class="mr-l-1">
+                            تفعيل
+                          </label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="block-3">
+                        </div>
+
+                        <div class="col-sm-3 form-check form-switch">
+                          <label for="block-4" class="mr-l-1">
+                            حظر
+                          </label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="block-4">
+                        </div>
+
+                      </div>
+
+                      <div class="text-left">
+
+                        <button class="btn btn-danger">
+                          حفظ جديد
+                        </button>
+
+                        <button class="btn btn-secondary">
+                          <a href="gasEmployers.html">
+                            العودة
+                          </a>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- End Row Company Cars Form --> 
+
+
                 <!-- Row -->
                 <div class="row max-height-vh-100">
                   <div class="col-lg-12 driver-info">
                     <div class="header border-top-1">
                       <h5 class="c-red">
-                        سائقين السيارات
+                        العاملين بمحطة الوقود
                       </h5>
                     </div>
                     <div class="info pd-1 bk shadow-blur shadow-card overflow-hidden">
                       <table class="table">
                         <thead>
                           <tr>
-                            <th class="text-right" scope="col">رقم الدعم الفنى</th>
-                            <th class="text-right" scope="col">الصورة</th>
-                            <th class="text-right" scope="col">	الاسم</th>
+                            <th class="text-right" scope="col">الاسم</th>
                             <th class="text-right" scope="col">الموبايل</th>
-                            <th class="text-right" scope="col">تاريخ الانتهاء</th>
-                            <th class="text-right" scope="col">نوع التغطية</th>
-                            <th class="text-right" scope="col">مستوى البطارية</th>
+                            <th class="text-right" scope="col">تفعيل</th>
+                            <th class="text-right" scope="col">حظر</th>
                             <th class="text-right" scope="col">أخر تواجد</th>
-                            <th class="text-right" scope="col">	الحالة</th>
                             <th class="text-right" scope="col">الادوات</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>800452</td>
-                            <td scope="row" style="max-width: 6rem;">
-                              <img style="max-width: 100%;" src="../assets/images/car.jpg" alt="">
-                            </td>
-                            <td>محمد محمد احمد عبدالحميد</td>
-                            <td>01277027786</td>
-                            <td>2022-06-19</td>
-                            <td>4.0</td>
-                            <td>23.0</td>
-                            <td>2021-09-01 16:33:31</td>
-                            <td>مفعل</td>
+                            <td scope="row"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                               <button class="btn btn-danger">
                                 <i class="fas fa-trash-alt"></i>
                               </button>
                               <button class="btn btn-success">
-                                <a href="companyPvDrivers-edit.html">
+                                <a href="gasEmployers-edit.html">
                                   <i class="fas fa-pencil-alt"></i>
                                 </a>
                               </button>
