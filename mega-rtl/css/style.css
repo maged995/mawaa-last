@@ -431,11 +431,7 @@ font-size: 14px;}
 .v-middle td, .v-middle th {
   vertical-align: middle; }
 
-.table-responsive {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  -ms-overflow-style: -ms-autohiding-scrollbar; }
+
 
 
   textarea#mentions {
@@ -1350,6 +1346,71 @@ use profile section
     width: 180px;
     margin: 0 auto; }
 
+
+/*******************
+Notify
+*******************/
+.notify {
+  position: relative;
+  top: -25px;
+  right: -7px; }
+  .notify .heartbit {
+    position: absolute;
+    top: -24px;
+    right: -7px;
+    height: 35px;
+    width: 30px;
+    z-index: 10;
+    border: 20px solid #fc4b6c;
+    border-radius: 70px;
+    -moz-animation: heartbit 1s ease-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: heartbit 1s ease-out;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation: heartbit 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+  .notify .point {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -2px;
+    top: -34px; }
+
+@-moz-keyframes heartbit {
+  0% {
+    -moz-transform: scale(0);
+    opacity: 0.0; }
+  25% {
+    -moz-transform: scale(0.1);
+    opacity: 0.1; }
+  50% {
+    -moz-transform: scale(0.5);
+    opacity: 0.3; }
+  75% {
+    -moz-transform: scale(0.8);
+    opacity: 0.5; }
+  100% {
+    -moz-transform: scale(1);
+    opacity: 0.0; } }
+
+@-webkit-keyframes heartbit {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0; }
+  25% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.1; }
+  50% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.3; }
+  75% {
+    -webkit-transform: scale(0.8);
+    opacity: 0.5; }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0; } }
+
 /*******************
 sidebar footer
 ******************/
@@ -1370,6 +1431,73 @@ sidebar footer
     float: left;
     text-align: center;
     font-size: 18px; }
+
+/*******************
+/*User mail widgets*/
+/*******************/
+.topbar .top-navbar .mailbox {
+  width: 300px; }
+  .topbar .top-navbar .mailbox ul {
+    padding: 0px; }
+    .topbar .top-navbar .mailbox ul li {
+      list-style: none; }
+
+.mailbox ul li .drop-title {
+  font-weight: 500;
+  padding: 11px 20px 15px;
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
+
+.mailbox ul li .nav-link {
+  border-top: 1px solid rgba(120, 130, 140, 0.13);
+  padding-top: 15px; }
+
+.mailbox .message-center {
+  height: 200px;
+  overflow: auto;
+  position: relative; }
+  .mailbox .message-center a {
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+    display: block;
+    text-decoration: none;
+    padding: 9px 15px; }
+    .mailbox .message-center a:hover {
+      background: #f2f4f8; }
+    .mailbox .message-center a div {
+      white-space: normal; }
+    .mailbox .message-center a .user-img {
+      width: 40px;
+      position: relative;
+      display: inline-block;
+      margin: 0 10px 15px 0; }
+      .mailbox .message-center a .user-img img {
+        width: 100%; }
+      .mailbox .message-center a .user-img .profile-status {
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        left: 30px;
+        position: absolute;
+        top: 1px;
+        width: 10px; }
+    .mailbox .message-center a .mail-contnet {
+      display: inline-block;
+      width: 75%;
+      vertical-align: middle; }
+      .mailbox .message-center a .mail-contnet h5 {
+        margin: 5px 0px 0; }
+      .mailbox .message-center a .mail-contnet .mail-desc,
+      .mailbox .message-center a .mail-contnet .time {
+        font-size: 12px;
+        display: block;
+        margin: 1px 0;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #32383b;
+        white-space: nowrap; }
+
+
 
 /*******************
 sidebar navigation
@@ -1547,10 +1675,11 @@ When click on sidebar toggler and also for tablet
 
 @media (max-width: 767px) {
   table {
-    overflow-y: auto !important;
-    height:100% !important;
-    display:block !important;
-  }
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
+
   .mini-sidebar .left-sidebar {
     position: fixed; }
   .mini-sidebar .left-sidebar, .mini-sidebar .sidebar-footer {
